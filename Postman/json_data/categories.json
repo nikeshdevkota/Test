@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Electronics",
+    "image": "https://placeimg.com/640/480/tech"
+  },
+  {
+    "name": "Clothing",
+    "image": "https://placeimg.com/640/480/fashion"
+  },
+  {
+    "name": "Books",
+    "image": "https://placeimg.com/640/480/book"
+  },
+  {
+    "name": "Home Decor",
+    "image": "https://placeimg.com/640/480/home"
+  },
+  {
+    "name": "Sports",
+    "image": "https://placeimg.com/640/480/sports"
+  }
+]

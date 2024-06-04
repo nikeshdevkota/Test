@@ -1,0 +1,37 @@
+[
+    {
+      "title": "Product 1",
+      "price": 9.99,
+      "description": "Description 1",
+      "categoryId": 98,
+      "images": ["https://placeimg.com/640/480/any"]
+    },
+    {
+      "title": "Product 2",
+      "price": 14.99,
+      "description": "Description 2",
+      "categoryId": 99,
+      "images": ["https://placeimg.com/640/480/any"]
+    },
+    {
+      "title": "Product 3",
+      "price": 19.99,
+      "description": "Description 3",
+      "categoryId": 100,
+      "images": ["https://placeimg.com/640/480/any"]
+    },
+    {
+      "title": "Product 4",
+      "price": 24.99,
+      "description": "Description 4",
+      "categoryId": 101,
+      "images": ["https://placeimg.com/640/480/any"]
+    },
+    {
+      "title": "Product 5",
+      "price": 29.99,
+      "description": "Description 5",
+      "categoryId": 102,
+      "images": ["https://placeimg.com/640/480/any"]
+    }
+]

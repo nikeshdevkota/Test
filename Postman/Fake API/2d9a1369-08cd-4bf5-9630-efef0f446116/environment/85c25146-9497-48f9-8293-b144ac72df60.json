@@ -1,0 +1,1 @@
+{"id":"85c25146-9497-48f9-8293-b144ac72df60","name":"Fake Store API Environment","values":[{"key":"baseUrl","value":"https://api.escuelajs.co","enabled":true,"type":"default"},{"key":"fourthUser","value":"","enabled":true,"type":"any"},{"key":"authToken","value":"","enabled":true,"type":"any"},{"key":"productUrl","value":"/api/v1/products/","enabled":true,"type":"default"}]}
