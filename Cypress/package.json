@@ -1,0 +1,29 @@
+{
+  "dependencies": {
+    "cypress": "^13.10.0",
+    "neat-csv": "^5.2.0"
+  },
+  "devDependencies": {
+    "cypress-mochawesome-reporter": "^3.8.2",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.3.0",
+    "mochawesome-report-generator": "^6.2.0",
+    "npm-run-all": "^4.1.5"
+  },
+  "scripts": {
+  "login:chrome":"cypress run --browser chrome --spec 'cypress\\e2e\\login.cy.js'",
+  "forgot:chrome": "cypress run --browser chrome --spec 'cypress\\e2e\\forgot.cy.js'",
+  "register:chrome": "cypress run --browser chrome --spec 'cypress\\e2e\\register.cy.js'",
+  "login:firefox":"cypress run --browser firefox --spec 'cypress\\e2e\\login.cy.js'",
+  "forgot:firefox": "cypress run --browser firefox --spec 'cypress\\e2e\\forgot.cy.js'",
+  "register:firefox": "cypress run --browser firefox --spec 'cypress\\e2e\\register.cy.js'",
+  "login:edge":"cypress run --browser edge --spec 'cypress\\e2e\\login.cy.js'",
+  "forgot:edge": "cypress run --browser edge  --spec 'cypress\\e2e\\forgot.cy.js'",
+  "register:edge": "cypress run --browser edge  --spec 'cypress\\e2e\\register.cy.js'",
+  "chrome:all": "npm run register:chrome && npm run login:chrome && npm run forgot:chrome",
+  "firefox:all": "npm run register:firefox && npm run login:firefox && npm run forgot:firefox",
+  "edge:all": "npm run register:edge && npm run login:edge && npm run forgot:edge",
+  "login:parallel": "npm-run-all --parallel login:chrome login:firefox login:edge",
+  "forgot:parallel": "npm-run-all --parallel forgot:chrome forgot:firefox forgot:edge"
+  }
+}

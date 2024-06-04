@@ -1,0 +1,15 @@
+firstName,lastName,street,city,state,zipCode,phone,ssn,username,password,confirm,validity
+Nikesh,Devkota, Santinagar, Kathmandu, Bagmati,44600,9876554400,15432,nikesh,abcde#$,abcde#$,validRegister
+Nibesh,Dev, Sant, Kath, Bag,440,987650,132,nibesh,abc&^,abc&^,validRegister
+Nimesh,Maharjan, Kupandole, Lalitpur, Mak,4640,97889,1342,nimesh,1234*5,1234*5,validRegister
+Nisesh,Limbu, Aama Yangri, Sindhupalchowk, Makwanpur,7640,99749,89@3,nisesh,9990,9990,validRegister
+Nitesh,Tamang, Thimi, Bhaktapur,Jhapa,5140,,1442,nitesh,34512!,34512!,validRegister
+Nixesh,Shah, Tikathaili, Bajhang,Pathivara,7640,,1822,nixesh,3452!,3452!,validRegister
+Nilesh,Shakya, Mustang, Manang,Annapurna,5180,757,9142,nikesh,45@12,45@12,invalidRegister
+Nidesh,Khadka, Ilam, Chitwan,Pokhara,5190,577,8142,nidesh,45@12, 4@12,invalidRegister
+Nipesh,Khad,lam,Chit,Pokh,1890,,4281,,,,invalidForgot
+Nikesh,Devkota,Santinagar,Kathmandu,Bagmati,44600,,15432,nikesh,abcde#$,,validForgot
+,,,,,,,,nbg,abcde#$,,invalidLoginUsername
+,,,,,,,,nikesh,abc990,,invalidLoginPassword
+,,,,,,,,nisesh,zzsss,,nonExistentUsername
+Nikesh,Devkota,,,,,,,nikesh,abcde#$,,validLoginData
