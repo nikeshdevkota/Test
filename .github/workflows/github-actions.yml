@@ -26,10 +26,10 @@ jobs:
     - name: install dependencies and verify Cypress
       run: npm ci # This command is similar to npm install,
                   # except it's meant to be used in automated environments such as test platforms, continuous integration, and deployment -- or any situation where you want to make sure you're doing a clean install of your dependencies.
-      working-directory: ./Cypress
+      working-directory: Cypress
     - name: Cypress tests
       run: npm run register:chrome && npm run login:parallel ## run test
-      working-directory: ./Cypress
+      working-directory: Cypress
       env:
         CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
