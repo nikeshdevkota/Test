@@ -23,8 +23,6 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: ${{ matrix.node-version }}
-    - name: Print Workspace Path
-      run: echo "Workspace Path is ${{ github.workspace  }}"
     - name: install dependencies and verify Cypress
       run: npm ci # This command is similar to npm install,
                   # except it's meant to be used in automated environments such as test platforms, continuous integration, and deployment -- or any situation where you want to make sure you're doing a clean install of your dependencies.

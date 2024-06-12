@@ -11,9 +11,9 @@
     "npm-run-all": "^4.1.5"
   },
   "scripts": {
-  "login:chrome":"cypress run --browser chrome --spec 'cypress\\e2e\\login.cy.js'",
+  "login:chrome":"cypress run --browser chrome --spec 'cypress/e2e/login.cy.js'",
   "forgot:chrome": "cypress run --browser chrome --spec 'cypress\\e2e\\forgot.cy.js'",
-  "register:chrome": "cypress run --browser chrome --spec 'cypress\\e2e\\register.cy.js'",
+  "register:chrome": "cypress run --browser chrome --spec 'cypress/e2e/register.cy.js'",
   "menu:chrome": "cypress run --browser chrome --spec 'cypress\\e2e\\menu.cy.js'",
   "login:firefox":"cypress run --browser firefox --spec 'cypress\\e2e\\login.cy.js'",
   "forgot:firefox": "cypress run --browser firefox --spec 'cypress\\e2e\\forgot.cy.js'",
