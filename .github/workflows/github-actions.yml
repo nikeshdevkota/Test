@@ -1,0 +1,36 @@
+# This workflow will do a clean install of node dependencies, cache/restore them, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: Cypress CI
+
+on:
+  push:
+    branches: [ Cypress_Github_Actions ] # trigger CI/CD on push on Cypress_Githb_Actions branch
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest # run on latest version of Ubuntu
+
+    strategy:
+      matrix:
+        node-version: [18.x] # Use 18.x Nodejs version
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v6
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+    - name: install dependencies and verify Cypress
+      run: npm ci # This command is similar to npm install,
+                  # except it's meant to be used in automated environments such as test platforms, continuous integration, and deployment -- or any situation where you want to make sure you're doing a clean install of your dependencies.
+      working-directory: ./Cypress
+    - name: Cypress tests
+      run: npm run register:chrome && npm run login:parallel ## run test
+      working-directory: ./Cypress
+      env:
+        CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
