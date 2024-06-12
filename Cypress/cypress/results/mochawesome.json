@@ -1,0 +1,278 @@
+{
+  "stats": {
+    "suites": 4,
+    "tests": 7,
+    "passes": 7,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-06-12T11:43:20.580Z",
+    "end": "2024-06-12T11:44:22.264Z",
+    "duration": 61684,
+    "testsRegistered": 7,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "d9030e06-2cd5-4e73-b81d-e19e9b47a4dd",
+      "title": "",
+      "fullFile": "cypress\\e2e\\register.cy.js",
+      "file": "cypress\\e2e\\register.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "6ab85cd9-29a9-45bf-841c-1a109fc36976",
+          "title": "Register Page User Journey",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "9766f2ae-97ff-4d94-80f0-0fa7c5eecff1",
+              "title": "Validate register page elements ",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Validate the page header and paragraph information in register page",
+                  "fullTitle": "Register Page User Journey Validate register page elements  Validate the page header and paragraph information in register page",
+                  "timedOut": null,
+                  "duration": 3814,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "register.validatePageInfo();",
+                  "err": {},
+                  "uuid": "ef143b75-6a14-47d3-8116-984c31e0cff8",
+                  "parentUUID": "9766f2ae-97ff-4d94-80f0-0fa7c5eecff1",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Validate the table elements and texts in register page",
+                  "fullTitle": "Register Page User Journey Validate register page elements  Validate the table elements and texts in register page",
+                  "timedOut": null,
+                  "duration": 1413,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.getCommonCustomerInfoLabel(8);\nregister.validateTableElementsAndTexts();",
+                  "err": {},
+                  "uuid": "48b86186-147f-4292-adbe-c73dfb0ffbb8",
+                  "parentUUID": "9766f2ae-97ff-4d94-80f0-0fa7c5eecff1",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "ef143b75-6a14-47d3-8116-984c31e0cff8",
+                "48b86186-147f-4292-adbe-c73dfb0ffbb8"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 5227,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "8010e37e-fd1f-48a0-8911-412ac5f54aea",
+              "title": "Provide valid inputs for registration with/without providing phone number and validate new registration",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Provide valid inputs without a phone number and validate new registration ",
+                  "fullTitle": "Register Page User Journey Provide valid inputs for registration with/without providing phone number and validate new registration Provide valid inputs without a phone number and validate new registration ",
+                  "timedOut": null,
+                  "duration": 17260,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.resetDatabase();\nregisterValidUsers(false);",
+                  "err": {},
+                  "uuid": "2beaa720-5c6f-47b3-8739-a7bb4fa31d5b",
+                  "parentUUID": "8010e37e-fd1f-48a0-8911-412ac5f54aea",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Provide valid inputs along with a phone number and validate new registration ",
+                  "fullTitle": "Register Page User Journey Provide valid inputs for registration with/without providing phone number and validate new registration Provide valid inputs along with a phone number and validate new registration ",
+                  "timedOut": null,
+                  "duration": 22821,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "registerValidUsers(true);",
+                  "err": {},
+                  "uuid": "61fcacf6-ada6-4989-b5ff-0dbae28f1975",
+                  "parentUUID": "8010e37e-fd1f-48a0-8911-412ac5f54aea",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "2beaa720-5c6f-47b3-8739-a7bb4fa31d5b",
+                "61fcacf6-ada6-4989-b5ff-0dbae28f1975"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 40081,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "d365f63c-65d9-4a8f-9e89-c9f5fe790d25",
+              "title": "Provide invalid inputs for registration and validate error messages",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Provide empty inputs and validate empty input error messages",
+                  "fullTitle": "Register Page User Journey Provide invalid inputs for registration and validate error messages Provide empty inputs and validate empty input error messages",
+                  "timedOut": null,
+                  "duration": 4187,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.validateCommonCustomerEmptyMessage(\"Register\", 8);\nregister.validateRegisterEmptyMessage();",
+                  "err": {},
+                  "uuid": "6ece78b6-70af-4aec-86a9-413f1cb29b06",
+                  "parentUUID": "d365f63c-65d9-4a8f-9e89-c9f5fe790d25",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Provide already existing username and validate error message",
+                  "fullTitle": "Register Page User Journey Provide invalid inputs for registration and validate error messages Provide already existing username and validate error message",
+                  "timedOut": null,
+                  "duration": 5460,
+                  "state": "passed",
+                  "speed": "medium",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.fixture('userData.csv').then(neatCSV).then(userData => {\n  validData = userData.filter(data => data.validity == 'invalidRegister' && data.password == data.confirm);\n  validData.forEach(data => {\n    cy.provideCommonCustomerInfo(data.firstName, data.lastName, data.street, data.city, data.state, data.zipCode, data.ssn, 8);\n    register.provideUsernamePassword(data.username, data.password, data.confirm);\n    cy.clickInput(\"Register\");\n    register.validateUsernameExistsError();\n  });\n});",
+                  "err": {},
+                  "uuid": "b412e3bc-0b7a-4163-b85a-26b7a9804615",
+                  "parentUUID": "d365f63c-65d9-4a8f-9e89-c9f5fe790d25",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Validate password mismatch error when providing different values for password and confirm password",
+                  "fullTitle": "Register Page User Journey Provide invalid inputs for registration and validate error messages Validate password mismatch error when providing different values for password and confirm password",
+                  "timedOut": null,
+                  "duration": 6038,
+                  "state": "passed",
+                  "speed": "medium",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.fixture('userData.csv').then(neatCSV).then(userData => {\n  validData = userData.filter(data => data.validity == 'invalidRegister' && data.password != data.confirm);\n  validData.forEach(data => {\n    cy.provideCommonCustomerInfo(data.firstName, data.lastName, data.street, data.city, data.state, data.zipCode, data.ssn, 8);\n    register.provideUsernamePassword(data.username, data.password, data.confirm);\n    cy.clickInput(\"Register\");\n    register.validatePasswordMismatchError();\n  });\n});",
+                  "err": {},
+                  "uuid": "de7ebe22-91f9-493c-9dcf-f9872e2f96d8",
+                  "parentUUID": "d365f63c-65d9-4a8f-9e89-c9f5fe790d25",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "6ece78b6-70af-4aec-86a9-413f1cb29b06",
+                "b412e3bc-0b7a-4163-b85a-26b7a9804615",
+                "de7ebe22-91f9-493c-9dcf-f9872e2f96d8"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 15685,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
