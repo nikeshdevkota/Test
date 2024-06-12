@@ -48,7 +48,7 @@ describe('Register Page User Journey', () => {
     })
 
      //  Use context to group valid inputs for customer registration
-    context.only("Provide valid inputs for registration with/without providing phone number and validate new registration",()=>{
+    context("Provide valid inputs for registration with/without providing phone number and validate new registration",()=>{
        
         it('Provide valid inputs without a phone number and validate new registration ', () => {
             cy.resetDatabase()

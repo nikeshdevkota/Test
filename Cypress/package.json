@@ -29,5 +29,9 @@
   "login:parallel": "npm-run-all --parallel login:chrome login:firefox login:edge",
   "forgot:parallel": "npm-run-all --parallel forgot:chrome forgot:firefox forgot:edge",
   "menu:parallel": "npm-run-all --parallel menu:chrome menu:firefox menu:edge"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nikeshdevkota/Test"
   }
 }
